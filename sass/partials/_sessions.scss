@@ -248,6 +248,7 @@
 }
 .session.session--coming-soon {
   background-color: $beyond-blue;
+  float: left;
   @include media($tablet) {
     display: none;
   }
