@@ -38,9 +38,24 @@ class Countdown {
   }
 
   calcCountdown(){
-    var superEarlyBird = 'September 26, 2015 18:00:00';
-    var EarlyBird = 'October 22, 2015 18:00:00';
-    var nextIncrease;
+    const ticketTiers = [
+      {
+        name: 'Super Early bird',
+        date: 'September 26, 2015 18:00:00'
+      },
+      {
+        name: 'Early bird',
+        date: 'October 22, 2015 18:00:00'
+      },
+      {
+        name: 'Regular',
+        date: 'November 10, 2015 18:00:00'
+      },
+      {
+        name: 'Late',
+        date: 'November 23, 2015 10:00:00'
+      }];
+    const totalTicketTiers = ticketTiers.length - 1;
 
     if( this.inTheFuture(superEarlyBird) ){
       nextIncrease = superEarlyBird;
