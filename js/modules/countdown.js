@@ -31,6 +31,12 @@ class Countdown {
     }
   }
 
+  inThePast(targetDate){
+    if( new Date() >  new Date(targetDate) ){
+      return true;
+    }
+  }
+
   calcCountdown(){
     var superEarlyBird = 'September 26, 2015 18:00:00';
     var EarlyBird = 'October 22, 2015 18:00:00';
