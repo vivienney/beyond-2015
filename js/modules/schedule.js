@@ -19,7 +19,7 @@ class Schedule {
     if(hash === '#anchor-js' || hash === '#anchor-sketch' || hash === '#anchor-github'){
       this.toggleSchedule('workshops');
     }
-    if(hash !== '#workshops' && hash !== '#talks'){
+    if(hash !== '#workshops' && hash !== '#talks' && hash !== ''){
         this.scheduleSPeakerInfo(hash);
     }
     console.log(hash);
