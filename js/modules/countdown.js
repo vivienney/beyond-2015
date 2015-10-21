@@ -57,28 +57,33 @@ class Countdown {
       }];
     const totalTicketTiers = ticketTiers.length - 1;
 
-    if( this.inTheFuture(superEarlyBird) ){
-      nextIncrease = superEarlyBird;
-    } else {
-      $('.ticket').first().addClass('ticket--sold-out').unwrap('<a href=""></a>');
-      $('.ticket').eq(1).removeClass('ticket--unreleased');
-      $('.ticket').eq(1).wrap('<a href="https://www.eventbrite.co.uk/e/beyond-conf-2015-tickets-18517110175"></a>');
-      nextIncrease = EarlyBird;
+    for (var i = 0; i < ticketTiers.length; i++) {
+      if( this.inThePast(ticketTiers[i].date) ){
+        $('.ticket').eq(i).addClass('ticket--sold-out');
+      } else {
+        $('.ticket--sold-out').last().next().removeClass('ticket--unreleased');
+        $('.ticket').eq(i).wrap('<a href="https://www.eventbrite.co.uk/e/beyond-conf-2015-tickets-18517110175"></a>');
+      }
     }
 
-    var minutes = this.timeUntilDate(nextIncrease, 'minutes');
-    var hours = this.timeUntilDate(nextIncrease, 'hours');
-    var days = this.timeUntilDate(nextIncrease, 'days');
+    if( $('.ticket--sold-out').last().index() < totalTicketTiers ) {
+      let nextIncrease = ticketTiers[$('.ticket--sold-out').last().next().index() ].date;
+      let minutes = this.timeUntilDate(nextIncrease, 'minutes');
+      let hours = this.timeUntilDate(nextIncrease, 'hours');
+      let days = this.timeUntilDate(nextIncrease, 'days');
 
-    if(minutes <= 60){
-      this.displayCountdown( minutes, 'minutes');
-    } else if(hours <= 24) {
-      this.displayCountdown( hours, 'hours');
+      if(minutes <= 60){
+        this.displayCountdown( minutes, 'minutes');
+      } else if(hours <= 24) {
+        this.displayCountdown( hours, 'hours');
+      } else {
+        this.displayCountdown( days , 'days');
+      }
     } else {
-      this.displayCountdown( days, 'days');
+      this.displayCountdown( 0 , 'days');
     }
   }
-  
+
   displayCountdown(countdownAmount, format){
     var countdownAsText = countdownAmount.toString();
 
