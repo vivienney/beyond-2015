@@ -3,9 +3,9 @@ layout: post
 post: true
 title: Designing Beyond
 date: 2015-10-2 11:30:00
-blog_feature_image:
-single_feature_image:
-og_image:
+blog_feature_image: designing-beyond-preview.png
+single_feature_image: designing-beyond-header.png
+og_image: designing-beyond-og.png
 ---
 
 When we sat down to design Beyond, there were five developers on our team. One had studied computer science, one digital art and technology, one history of art and two biological sciences. Like most web developers, their paths to development had wound up and down and around each other, spurred on by a lot of self-learning and support from other developers.
