@@ -2,7 +2,7 @@
 layout: post
 post: true
 title: Designing Beyond
-date: 2015-10-2 11:30:00
+date: 2015-10-22 11:30:00
 blog_feature_image: designing-beyond-preview.png
 single_feature_image: designing-beyond-header.png
 og_image: designing-beyond-og.png
