@@ -14,38 +14,41 @@
 
 .sponsors__headline {
   padding: 40px 0 100px;
+  text-align: center;
 }
 
 .sponsors__partners {
   display: table;
   width: 100%;
 
-  .sponsor {
-    @include span-columns(3, table);
-    padding: 40px 0 100px;
-    @include media($mobile) {
-      width: 100%;
-      display: block;
-      padding: 50px 0;
-    }
-  }
-
-  .sponsor__link {
-    display: block;
-    margin: 0 auto 0 auto;
-    max-width: 60%;
-  }
-
-  .sponsor__image {
+}
+.sponsor {
+  text-align: center;
+  @include span-columns(3, table);
+  padding: 50px 0;
+  @include media($mobile) {
     width: 100%;
+    display: block;
+    padding: 50px 0;
   }
 }
 
-.sponsor {
-  text-align: center;
+.sponsor--large {
+  @include span-columns(6, table);
+}
+.sponsor--single {
+  width: auto;
+  display: inline-block;
+}
+
+.sponsor__link {
+  display: block;
+  margin: 0 auto 0 auto;
+  max-width: 60%;
 }
 
 .sponsor__image {
+  width: 100%;
   vertical-align: middle;
   @include media($mobile) {
     max-width: 100%;
