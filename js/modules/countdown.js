@@ -1,6 +1,9 @@
 class Countdown {
   init(){
-    this.calcCountdown();
+    if( $('section').hasClass('tickets')){
+
+      this.calcCountdown();
+    }
   }
   timeUntilDate(targetDate, format){
     var today = new Date();
