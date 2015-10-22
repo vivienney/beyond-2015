@@ -31,33 +31,59 @@ class Countdown {
     }
   }
 
-  calcCountdown(){
-    var superEarlyBird = 'September 26, 2015 18:00:00';
-    var EarlyBird = 'October 22, 2015 18:00:00';
-    var nextIncrease;
-
-    if( this.inTheFuture(superEarlyBird) ){
-      nextIncrease = superEarlyBird;
-    } else {
-      $('.ticket').first().addClass('ticket--sold-out').unwrap('<a href=""></a>');
-      $('.ticket').eq(1).removeClass('ticket--unreleased');
-      $('.ticket').eq(1).wrap('<a href="https://www.eventbrite.co.uk/e/beyond-conf-2015-tickets-18517110175"></a>');
-      nextIncrease = EarlyBird;
-    }
-
-    var minutes = this.timeUntilDate(nextIncrease, 'minutes');
-    var hours = this.timeUntilDate(nextIncrease, 'hours');
-    var days = this.timeUntilDate(nextIncrease, 'days');
-
-    if(minutes <= 60){
-      this.displayCountdown( minutes, 'minutes');
-    } else if(hours <= 24) {
-      this.displayCountdown( hours, 'hours');
-    } else {
-      this.displayCountdown( days, 'days');
+  inThePast(targetDate){
+    if( new Date() >  new Date(targetDate) ){
+      return true;
     }
   }
-  
+
+  calcCountdown(){
+    const ticketTiers = [
+      {
+        name: 'Super Early bird',
+        date: 'September 26, 2015 18:00:00'
+      },
+      {
+        name: 'Early bird',
+        date: 'October 22, 2015 18:00:00'
+      },
+      {
+        name: 'Regular',
+        date: 'November 10, 2015 18:00:00'
+      },
+      {
+        name: 'Late',
+        date: 'November 23, 2015 10:00:00'
+      }];
+    const totalTicketTiers = ticketTiers.length - 1;
+
+    for (var i = 0; i < ticketTiers.length; i++) {
+      if( this.inThePast(ticketTiers[i].date) ){
+        $('.ticket').eq(i).addClass('ticket--sold-out');
+      } else {
+        $('.ticket--sold-out').last().next().removeClass('ticket--unreleased');
+        $('.ticket').eq(i).wrap('<a href="https://www.eventbrite.co.uk/e/beyond-conf-2015-tickets-18517110175"></a>');
+      }
+    }
+
+    if( $('.ticket--sold-out').last().index() < totalTicketTiers ) {
+      let nextIncrease = ticketTiers[$('.ticket--sold-out').last().next().index() ].date;
+      let minutes = this.timeUntilDate(nextIncrease, 'minutes');
+      let hours = this.timeUntilDate(nextIncrease, 'hours');
+      let days = this.timeUntilDate(nextIncrease, 'days');
+
+      if(minutes <= 60){
+        this.displayCountdown( minutes, 'minutes');
+      } else if(hours <= 24) {
+        this.displayCountdown( hours, 'hours');
+      } else {
+        this.displayCountdown( days , 'days');
+      }
+    } else {
+      this.displayCountdown( 0 , 'days');
+    }
+  }
+
   displayCountdown(countdownAmount, format){
     var countdownAsText = countdownAmount.toString();
 
