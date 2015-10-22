@@ -16,23 +16,24 @@ Big goals and visions in mind, we set out to find a fitting name for the event. 
 
 Beyond, then, seemed the perfect name.
 
-[IMAGE OF SKETCHES]
+![Sketches](/img/blog-content/designing-beyond-brainstorming.jpeg)
 
 Name down, what about the visuals? Sketching out an assortment of journey related symbols, paths and railway tracks, I thought of those wooden track toys. As most early learning toys do, they provide a blue print for creativity. A child can be as conforming or eccentric as they want with their tracks, but provided they lock the pieces together, they can still push the train from one end to the other. As a visual cue, these puzzle tracks were just what we needed - an emblem of a guiding path which offers you the freedom of choosing your own direction.  
 
 The colours, just like the track pieces, would be clear cut but interchangeable. Bold, bright and adaptable to anyone - again, reminders of the childhood joy of learning and play. A couple of days of rejected colour choices later, a subtle take on the primary colours was the clear winner. After all, it made sense that an identity which pivoted on the idea of adaptable building blocks would make use of the three prime colours.
 
-[IMAGE OF COLOURS]
+![Beyond Colours](/img/blog-content/designing-beyond-colours.png)
 
 With only one confirmed speaker and workshop, the website design began with little content to play with. The first iteration of the home page looked like this:
 
-[FIRST HOMEPAGE DESIGN]
+![First Homepage Design](/img/blog-content/designing-beyond-first-website-design.png)
 
 Minimal and bright, but not particularly informative. Feedback from users was a mixture of curiosity and slight confusion - who, exactly, was this event for? And, as the lead developer on the project was quick to point out, the pale background colour was, at best, a tea-stained colour for anyone with a fancy Mac screen, and at worst, imperceptible to the naked eye. When designing for the web, accessibility needs to be considered at every stage of the design process. Yet just as I had done, it’s too often forgotten about, or even willingly overlooked in favour of the aesthetics.
 
 A couple of iterations later, no more tea-stain. Still, we were holding back on essential information. The code of conduct was hidden in a link in the footer; there was no mention of the extra workshops that were to be announced; and the homepage provided little detail on what the speakers would be talking about. We'd assumed that users would somehow unearth this information themselves. Feedback told us otherwise, and proved that the information needed to be far easier to consume.
 
-[SECOND HOMEPAGE DESIGN]
+![Second Homepage Design](/img/blog-content/designing-beyond-second-website-design.png)
+
 
 More and more iterations came and went, and the original layout began to fade. The strength of the design though, lay in the core branding. The modular shapes and colours could be moulded to fit each new iteration without losing their original impact.
 
