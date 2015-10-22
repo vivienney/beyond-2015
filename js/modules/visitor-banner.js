@@ -1,11 +1,8 @@
 import _ from '../../bower_components/lodash-compat/lodash.min';
 
 const visitors = {
-  'product-hunt' : {
-    message : 'Welcome Product Hunters get 20% off with code hunt20'
-  },
-  'lanyrd' : {
-    message : 'Welcome Lanyrd get 10% off with code lanyrd10'
+  'designernews' : {
+    message : 'Hello Designer News! Get 10% off regular tickets with this code: dn10'
   }
 };
 
