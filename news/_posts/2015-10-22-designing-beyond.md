@@ -1,7 +1,7 @@
 ---
 layout: post
 post: true
-title: Designing Beyond
+title: "Designing Beyond: Part 1"
 date: 2015-10-22 11:30:00
 blog_feature_image: designing-beyond-preview.png
 single_feature_image: designing-beyond-header.png
@@ -38,3 +38,5 @@ A couple of iterations later, no more tea-stain. Still, we were holding back on 
 More and more iterations came and went, and the original layout began to fade. The strength of the design though, lay in the core branding. The modular shapes and colours could be moulded to fit each new iteration without losing their original impact.
 
 What you’re looking at now, like most websites, is still considered a work in progress. As I sit here and type this, notifications from GitHub are pinging at the top of my screen telling me about such and such improvement that’s happening on the development side. Knowing that your product is sitting out there unfinished in the big wide world for all to see is daunting. The temptation to tell people not to look at it yet because “tomorrow it’ll be even better when we’ve added that other bit” is hard to fight. But user-driven design is an exciting process. It pushes you to be continuously creative, finding solutions for problems you didn’t know you had. It reminds you that unless you’re creating for you and you only, design can’t happen in a vacuum.
+
+In Part 2 of this blog post, we’ll take a deeper look into the usability challenges we faced along the way and how we got around them.
