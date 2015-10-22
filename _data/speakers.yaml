@@ -180,13 +180,13 @@
   anchor: alice
   image: speaker-alice-bartlett.jpg
   position: Senior Developer
-  company: Government Digital Service
-  url: https://gds.blog.gov.uk/
+  company: Financial Times
+  url: http://alicebartlett.co.uk/
   github: alicebartlett
   twitter: alicebartlett
   title: Asking for More
   description: >
-    <p>As a person who manages developers, I find myself giving the same advice and fixing the same problems repeatedly.</p>
+    <p>When I managed developers, I found myself fixing the same problems repeatedly.</p>
     <p>This talk will cover getting the most out of your role as a developer or person new to development including; how to negotiate a salary, how to spot and make the most of opportunities, and how to deal with conflict, and generally how to ask for more.</p>
 
 - speaker: false
