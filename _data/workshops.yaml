@@ -44,7 +44,8 @@
 
 - workshop: true
   soon: schedule__session--coming-soon
-  name: Workshop
+  name:
+  anchor: tbc
   title: Session TBC
   description: >
     <p>Coming Soon</p>
