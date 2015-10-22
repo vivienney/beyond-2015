@@ -1,6 +1,7 @@
 class Countdown {
   init(){
-    if( $('tickets').hasClass('schedule')){
+    if( $('section').hasClass('tickets')){
+
       this.calcCountdown();
     }
   }
