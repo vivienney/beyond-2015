@@ -1,3 +1,5 @@
+
+//Modules
 import schedule from './schedule';
 import mailchimpForm from './mailchimp-form';
 import blog from './blog';
@@ -60,7 +62,7 @@ class UiActions {
 
     $(window).on('resize', function(){
 
-      if(Modernizr.mq('only screen and (max-width: 850px)')) {
+      if(Modernizr.mq('(max-width: 850px)')) {
         $('.js-slot-info').css('margin-top', 0);
       } else {
         $('.js-section-header-modal').empty();

@@ -1,12 +1,16 @@
 "use strict";
 //vendor
-import fitvid from '../bower_components/fitvids/jquery.fitvids.js';
+import $ from 'jquery';
+import fitvids from 'fitvids';
+import svgeezy from 'svgeezy';
+import Modernizr from 'modernizr-mq';
 
 //modules
 import countdown from './modules/countdown';
 import uiActions from './modules/ui-actions';
 import schedule from './modules/schedule';
 import visitor from './modules/visitor-banner';
+import audioPlayer from './modules/audio-player';
 
 const APP = {
   init: function() {
@@ -19,6 +23,7 @@ const APP = {
     uiActions.init();
     countdown.init();
     schedule.init();
+    audioPlayer.init();
   }
 };
 

@@ -1,8 +1,8 @@
 // Vendor
-@import "vendor/normalize";
-@import "bourbon/bourbon";
+@import "../bower_components/normalize-css/normalize.css";
+@import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "grid-settings";
-@import "neat/neat";
+@import "../bower_components/neat/app/assets/stylesheets/neat";
 
 // Shared
 @import "mixins";
@@ -40,6 +40,7 @@
 //Blog
 @import "partials/blog";
 @import "partials/blog-single";
+@import "partials/player";
 
 body {
   background-color: #FFFFFF;

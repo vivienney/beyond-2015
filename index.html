@@ -52,7 +52,7 @@ speaker_order:
               <h3 class="session__name">{{current_speaker.name}} - {{current_speaker.company}}</h3>
               <h2 class="session__title">{{current_speaker.title}}</h2>
               <div class="session__description">
-                {{current_speaker.description | truncatewords: 48}}
+                {{current_speaker.description | truncatewords: 45}}
               </div>
             </div>
           </a>
@@ -67,7 +67,6 @@ speaker_order:
   <h2 class="section-header--primary">A one day conference for developers and people who have recently started coding.</h2>
 
   <div class="tickets__options">
-    <a href="https://www.eventbrite.co.uk/e/beyond-conf-2015-tickets-18517110175">
       <div class="ticket">
         <img src="/img/all-gone.svg" class="ticket__all-gone">
         <div class="arrow-down"></div>
@@ -75,7 +74,6 @@ speaker_order:
         <span class="ticket__price">£100</span>
         <span class="ticket__type">Super Early Bird</span>
       </div>
-    </a>
 
     <div class="ticket ticket--unreleased">
       <img src="/img/all-gone.svg" class="ticket__all-gone">
@@ -89,14 +87,14 @@ speaker_order:
       <div class="arrow-down"></div>
       <div class="arrow-up"></div>
       <span class="ticket__price ticket__price--unreleased">£200</span>
-      <span class="ticket__type">Discount</span>
+      <span class="ticket__type">Regular</span>
     </div>
     <div class="ticket ticket--unreleased">
       <img src="/img/all-gone.svg" class="ticket__all-gone">
       <div class="arrow-down"></div>
       <div class="arrow-up"></div>
       <span class="ticket__price ticket__price--unreleased">£250</span>
-      <span class="ticket__type">Full Price</span>
+      <span class="ticket__type">Late</span>
     </div>
     <div class="ticket-countdown">
       <div class="ticket-countdown__contents">
@@ -124,11 +122,10 @@ speaker_order:
   {% assign sketch = site.data.workshops | where:"anchor", "sketch" %}
   {% assign sketch = sketch.first %}
   <a href="/schedule#anchor-{{sketch.anchor}}" class="session session--workshop">
-    <img src="/img/more-workshops-badge.svg" class="session__workshop-comming-soon-badge">
     <img class="session__image session__image--workshop" src="/img/{{sketch.image_alt-home}}">
     <div class="session__info session__info--workshop">
       <h2 class="session__title session__title--workshop">{{sketch.title}}</h2>
-      <h3 class="session__name session__name--workshop">{{sketch.position}}</h3>
+      <h3 class="session__name session__name--workshop">{{sketch.name}}</h3>
     </div>
   </a>
 
@@ -140,6 +137,19 @@ speaker_order:
     <div class="session__info session__info--workshop">
       <h2 class="session__title session__title--workshop">{{js.title}}</h2>
       <h3 class="session__name session__name--workshop">{{js.name}}</h3>
+    </div>
+  </a>
+
+  {% include workshop-coming-soon.html %}
+
+  {% assign github = site.data.workshops | where:"name", "GitHub" %}
+  {% assign github = github.first %}
+  <a href="/schedule#anchor-{{github.anchor}}" class="session session--github session--workshop">
+
+    <img class="session__image session__image--workshop" src="/img/{{github.image_alt-home}}">
+    <div class="session__info session__info--workshop">
+      <h2 class="session__title session__title--workshop">{{github.title}}</h2>
+      <h3 class="session__name session__name--workshop">{{github.name}}</h3>
     </div>
   </a>
 
