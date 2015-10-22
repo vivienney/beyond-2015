@@ -15,6 +15,7 @@
   ],
   "dependencies": {
     "fitvids": "~1.1.0",
+    "lodash-compat": "~3.10.1",
     "jquery": "~1.x",
     "svgeezy": "~1.0.0",
     "neat": "~1.7.2",
