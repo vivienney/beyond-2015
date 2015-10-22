@@ -28,7 +28,7 @@ const visitor = {
   },
   findValues: function(){
     let params = this.getQueryParams();
-    let visitor = params['visitor'];
+    let visitor = params['ref'];
     if(this.isSpecialGuest(visitor)){
       return visitors[visitor];
     }
