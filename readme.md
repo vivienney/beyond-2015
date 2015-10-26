@@ -3,6 +3,12 @@ Beyond is a one day conference to inspire, motivate and support those just start
 
 The Beyond Conference site is a Jekyll generated static site hosted on Github Pages. External dependencies are managed through NPM, Bower and Ruby Gems.
 
+## Toc
+- [Local Setup](#setup)
+- [Production Deployment](#production)
+- [Creating Branches](#creating-branches)
+- [What is needed for a blog post](#how-to-create-a-new-blog-post)
+
 ## Setup
 
 To work on this project you will need the following tools installed on your machine
@@ -79,14 +85,14 @@ Deploy the contents of `_site/` to Github Pages with an optional message for thi
 gulp deploy --m 'Commit message'
 ```
 
-### Creating branches
+## Creating branches
 Whenever some code is to be written for Beyond site it should be created in a new git branch `git checkout -b name-of-branch` from the `master` branch.
 There are a few naming conventions we use when creating branches:
 - `bug-branch-name`, prepend your branch name with `bug` when writing code that will fix a bug
 - `feature-branch-name`, prepend your branch name with `feature` when creating a new feature or updating one
 - `content-branch-name`, prepend your branch name with `content` when adding new content to the site, this could be a new blog post or adding new speakers text etc.
 
-### How to create a new blog post
+## How to create a new blog post
 When creating a blog post there are some things that will make it a lot easier for the development team to get it up online. Here are the things we need from you:
 - A plain text file of the copy for the post
 - If you have images that will appear inline in the blog content could you signify where they will be by putting this at the location `[name-of-blog-post-image-name.jpg/png]`
