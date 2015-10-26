@@ -78,3 +78,9 @@ Deploy the contents of `_site/` to Github Pages with an optional message for thi
 ```
 gulp deploy --m 'Commit message'
 ```
+### Creating branches
+Whenever some code is to be written for Beyond site it should be created in a new git branch `git checkout -b name-of-branch` from the `master` branch.
+There are a few naming conventions we use when creating branches:
+- `bug-branch-name`, prepend your branch name with `bug` when writing code that will fix a bug
+- `feature-branch-name`, prepend your branch name with `feature` when creating a new feature or updating one
+- `content-branch-name`, prepend your branch name with `content` when adding new content to the site, this could be a new blog post or adding new speakers text etc.
