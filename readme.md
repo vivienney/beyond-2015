@@ -78,9 +78,21 @@ Deploy the contents of `_site/` to Github Pages with an optional message for thi
 ```
 gulp deploy --m 'Commit message'
 ```
+
 ### Creating branches
 Whenever some code is to be written for Beyond site it should be created in a new git branch `git checkout -b name-of-branch` from the `master` branch.
 There are a few naming conventions we use when creating branches:
 - `bug-branch-name`, prepend your branch name with `bug` when writing code that will fix a bug
 - `feature-branch-name`, prepend your branch name with `feature` when creating a new feature or updating one
 - `content-branch-name`, prepend your branch name with `content` when adding new content to the site, this could be a new blog post or adding new speakers text etc.
+
+### How to create a new blog post
+When creating a blog post there are some things that will make it a lot easier for the development team to get it up online. Here are the things we need from you:
+- A plain text file of the copy for the post
+- If you have images that will appear inline in the blog content could you signify where they will be by putting this at the location `[name-of-blog-post-image-name.jpg/png]`
+- The images that will appear inline in the blog post should be named in the following format `name-of-blog-post-image-name.jpg/png` and have the width of `662px` e.g `designing-beyond-brainstorming.jpg/png`
+- An open graph that will be used on social sites when sharing the link, these should be named `name-of-blog-post-og.jpg/png` and should be `1200px` wide and `630px` tall
+- A header image that will appear above the posts content, these should be named `name-of-blog-post-header.jpg/png` and should be `812px` wide and `348px` tall
+- A small preview image that is used on the blog listing page, these shouldb be named `name-of-blog-post-preview.jpg/png` and should be `348px` wide and `348px` tall
+
+Having all this to hand at least a day before the blog post is due to go live will mean it will be super smooth process and means it won't be a last minute scrabble 🚀💖
