@@ -3,7 +3,7 @@ Beyond is a one day conference to inspire, motivate and support those just start
 
 The Beyond Conference site is a Jekyll generated static site hosted on Github Pages. External dependencies are managed through NPM, Bower and Ruby Gems.
 
-## Toc
+## Table of Contents
 - [Local Setup](#setup)
 - [Production Deployment](#production)
 - [Creating Branches](#creating-branches)
