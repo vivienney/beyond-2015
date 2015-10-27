@@ -15,6 +15,7 @@ var argv = require('yargs').argv;
 var browserify = require('browserify');
 var babelify = require('babelify');
 var source = require('vinyl-source-stream');
+var imagemin = require('gulp-imagemin');
 
 gulp.task('jekyll-prod', function (gulpCallBack){
    var enviroment = process.env
@@ -114,6 +115,15 @@ gulp.task('sass-on-build', ['jekyll-dev'], function() {
         .pipe(rename('main.css'))
         .pipe(gulp.dest('_site/css'))
         .pipe(browserSync.reload({stream:true}))
+});
+
+// This task does not run on any other tasks, simply run it every so often to ensure images are optimised
+gulp.task('image-optim', function() {
+  return gulp.src('img/*')
+  .pipe(imagemin({
+    progressive: true,
+    svgoPlugins: [{removeViewBox: false}]}))
+  .pipe(gulp.dest('img'))
 });
 
 gulp.task('browser-sync', ['jekyll-dev', 'sass-on-build', 'init-js'], function() {
