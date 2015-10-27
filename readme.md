@@ -100,7 +100,7 @@ When creating a blog post there are some things that will make it a lot easier f
 - The images that will appear inline in the blog post should be named in the following format `name-of-blog-post-image-name.jpg/png` and have the width of `662px` e.g `designing-beyond-brainstorming.jpg/png`
 - An open graph that will be used on social sites when sharing the link, these should be named `name-of-blog-post-og.jpg/png` and should be `1200px` wide and `630px` tall
 - A header image that will appear above the posts content, these should be named `name-of-blog-post-header.jpg/png` and should be `812px` wide and `348px` tall
-- A small preview image that is used on the blog listing page, these shouldb be named `name-of-blog-post-preview.jpg/png` and should be `348px` wide and `348px` tall
+- A small preview image that is used on the blog listing page, these should be named `name-of-blog-post-preview.jpg/png` and should be `348px` wide and `348px` tall
 
 Having all this to hand at least a day before the blog post is due to go live will mean it will be super smooth process and means it won't be a last minute scrabble 🚀💖
 
