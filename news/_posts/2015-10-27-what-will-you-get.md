@@ -46,7 +46,7 @@ When we surveyed the people who’d bought super early bird tickets, only 45% of
 
 A career in development is just like any other - with paths and ladders that need to be navigated and climbed. Career talks from Alice Bartlett of the Financial Times will help delegates understand how to get more out of a career in development, while Ruby Developer Linda Liukas’ talk will focus on how to rediscover and retain a junior level of curiosity and enthusiasm, at any stage of your working life. And, whether you're pre first job or somewhere further down the line, pop in to the CV clinic led by Stack Overflow to get invaluable advice on your CV.
 
-> “I'm excited to just be attending Beyond, but I’m definitely looking forward to hearing from the experienced speakers. I’m also very excited for the Github workshop. I feel like the conference was made for someone like me, and it’s a great opportunity that I couldn't miss.”
+> “I’m excited to just be attending Beyond, but I’m also very excited for the GitHub workshop. I feel like the conference was made for someone like me, and it’s a great opportunity that I wouldn’t miss.”
 
 > <p>- Freddie Lumor, Developer</p>
 
