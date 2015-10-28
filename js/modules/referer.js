@@ -1,14 +1,53 @@
 import _ from '../../bower_components/lodash-compat/lodash.min';
 
-const visitors = {
+const refererList = {
   'designernews' : {
-    message : 'Hello Designer News! Get 10% off regular tickets with this code: dn10'
+    message : 'Hello Designer News! Get 10% off regular tickets with this code: dn10',
+    specialGuest: true,
+    affiliate: false
+  },
+  'makers' : {
+    message : '',
+    specialGuest: false,
+    affiliate: true
   }
 };
 
 const visitor = {
   init: function(){
-    this.displayBanner();
+    let refParam = this.checkForRefParam();
+    let localRef = this.checkForLocalStorage();
+    let refererName = refParam || localRef;
+    let refererInfo = this.getRefererInfo(refererName);
+
+    if(refererInfo) {
+      this.actionReferer(refererInfo);
+      this.storeRefererName(refererName);
+    }
+  },
+  checkForRefParam: function(){
+    let params = this.getQueryParams();
+    return params['ref'];
+  },
+  checkForLocalStorage: function(){
+    return localStorage.getItem('referer');
+  },
+  getRefererInfo: function(refererName){
+    return refererList[refererName] || false;
+  },
+  storeRefererName: function(refererName){
+    localStorage.setItem('referer', refererName);
+  },
+  actionReferer: function(knowReferer){
+    if(knowReferer.specialGuest) {
+      this.displayBanner(knowReferer);
+    }
+    if(knowReferer.affiliate) {
+      this.replaceTicketLinks(knowReferer);
+    }
+  },
+  replaceTicketLinks: function(){
+    console.log('replace tickets');
   },
   getQueryParams: function(variable) {
     let query = window.location.search.substring(1);
@@ -20,21 +59,8 @@ const visitor = {
         })
     );
   },
-  isSpecialGuest: function(visitor){
-    return visitors[visitor] || false;
-  },
-  findValues: function(){
-    let params = this.getQueryParams();
-    let visitor = params['ref'];
-    if(this.isSpecialGuest(visitor)){
-      return visitors[visitor];
-    }
-  },
-  displayBanner: function(){
-    let visitorDetails = this.findValues();
-    if(visitorDetails) {
-      $('body').prepend(`<div class="welcome-banner">${visitorDetails.message} </div>`);
-    }
+  displayBanner: function(referer){
+    $('body').prepend(`<div class="welcome-banner">${referer.message} </div>`);
   }
 }
 export default visitor;

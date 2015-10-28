@@ -19,7 +19,7 @@ const APP = {
     svgeezy.init(false, 'png');
 
     //Module init
-    visitor.init();
+    referer.init();
     uiActions.init();
     countdown.init();
     schedule.init();
