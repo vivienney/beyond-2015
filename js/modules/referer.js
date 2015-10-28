@@ -13,7 +13,7 @@ const refererList = {
   }
 };
 
-const visitor = {
+const referral = {
   init: function(){
     let refParam = this.checkForRefParam();
     let localRef = this.checkForLocalStorage();
@@ -63,4 +63,4 @@ const visitor = {
     $('body').prepend(`<div class="welcome-banner">${referer.message} </div>`);
   }
 }
-export default visitor;
+export default referral;
