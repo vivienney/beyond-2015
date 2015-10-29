@@ -6,10 +6,25 @@ const refererList = {
     specialGuest: true,
     affiliate: false
   },
-  'makers' : {
-    message : '',
+  'codefirstgirls' : {
     specialGuest: false,
-    affiliate: true
+    affiliate: true,
+    link: ''
+  },
+  'girlsintech' : {
+    specialGuest: false,
+    affiliate: true,
+    link: ''
+  },
+  'makers' : {
+    specialGuest: false,
+    affiliate: true,
+    link: ''
+  },
+  'switchup' : {
+    specialGuest: false,
+    affiliate: true,
+    link: ''
   }
 };
 
@@ -38,16 +53,16 @@ const referral = {
   storeRefererName: function(refererName){
     localStorage.setItem('referer', refererName);
   },
-  actionReferer: function(knowReferer){
-    if(knowReferer.specialGuest) {
-      this.displayBanner(knowReferer);
+  actionReferer: function(referer){
+    if(referer.specialGuest) {
+      this.displayBanner(referer);
     }
-    if(knowReferer.affiliate) {
-      this.replaceTicketLinks(knowReferer);
+    if(referer.affiliate) {
+      this.replaceTicketLinks(referer);
     }
   },
-  replaceTicketLinks: function(){
-    console.log('replace tickets');
+  replaceTicketLinks: function(referer){
+    $('.js-ticket-link').attr('href', referer.link);
   },
   getQueryParams: function(variable) {
     let query = window.location.search.substring(1);

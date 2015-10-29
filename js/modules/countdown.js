@@ -65,7 +65,7 @@ class Countdown {
         $('.ticket').eq(i).addClass('ticket--sold-out');
       } else {
         $('.ticket--sold-out').last().next().removeClass('ticket--unreleased');
-        $('.ticket').eq(i).wrap('<a href="https://www.eventbrite.co.uk/e/beyond-conf-2015-tickets-18517110175"></a>');
+        $('.ticket').eq(i).wrap('<a href="https://www.eventbrite.co.uk/e/beyond-conf-2015-tickets-18517110175" class="js-ticket-link"></a>');
       }
     }
 

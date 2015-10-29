@@ -19,9 +19,9 @@ const APP = {
     svgeezy.init(false, 'png');
 
     //Module init
-    referer.init();
     uiActions.init();
     countdown.init();
+    referer.init();
     schedule.init();
     audioPlayer.init();
   }
