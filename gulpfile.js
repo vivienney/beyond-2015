@@ -102,6 +102,7 @@ gulp.task('sass', function() {
     return sass('sass/', { style: 'expanded' })
         .pipe(prefix("last 3 version", "> 1%", "ie 8"))
         .pipe(rename('main.css'))
+        .pipe(minifyCSS())
         .pipe(gulp.dest('_site/css'))
         .pipe(browserSync.reload({stream:true}))
 });
@@ -113,6 +114,7 @@ gulp.task('sass-on-build', ['jekyll-dev'], function() {
     return sass('sass/', { style: 'expanded' })
         .pipe(prefix("last 3 version", "> 1%", "ie 8"))
         .pipe(rename('main.css'))
+        .pipe(minifyCSS())
         .pipe(gulp.dest('_site/css'))
         .pipe(browserSync.reload({stream:true}))
 });
