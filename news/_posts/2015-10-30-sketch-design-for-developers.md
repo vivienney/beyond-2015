@@ -1,7 +1,7 @@
 ---
 layout: post
 post: true
-title: "Sketch: Design for Developers”"
+title: "Sketch: Design for Developers"
 date: 2015-10-30 13:30:00
 blog_feature_image: sketch-preview.png
 single_feature_image: sketch-header.png
@@ -25,7 +25,7 @@ likes of PhotoShop and InDesign.
 
 ![Sketches](/img/blog-content/sketch-screenshot-blog.png)
 
-template has you designing responsive sites from the word go, with
+You can see why. Sketch has web design at its core. The web design template has you designing responsive sites from the word go, with
 separate artboards for desktop, tablet and mobile screens. You can easily
 create shared styles which enable you to produce the consistency that is
 key to great web design.
