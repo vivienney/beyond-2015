@@ -43,6 +43,20 @@
     <p>If you’re an experienced GitHub user, we’d love for you to join the session as a mentor. To join the session as a mentor, please email sam.b@beyondconf.co</p>
 
 - workshop: true
+  name: General Assembly
+  anchor: ga
+  twitter: ga
+  github:
+  url: http://generalassemb.ly/
+  image: workshop-ga.jpg
+  image_alt-home: workshop-ga.jpg
+  position:
+  title: Future-Proofing Tech & Digital Careers
+  description: >
+    <p>Melissa Andrada, co-founder of Qlue, will be talking about future-proofing tech and digital careers.</p>
+    <p>She will offer perspectives across creative, technology and business, with insights into where current jobs may lead. Learn how to stay relevant and position yourself for the future in this rapidly changing tech space, what skills are sought after and how to go about upskilling.</p>
+
+- workshop: true
   soon: schedule__session--coming-soon
   name:
   anchor: tbc
