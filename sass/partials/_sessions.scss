@@ -1,4 +1,4 @@
-.speakers, .workshops {
+:not(.session--workshop).speakers, .workshops {
   @include outer-container;
   @include outer-padding;
   @include clearfix();
@@ -41,8 +41,8 @@
   color: #fff;
 }
 // Every other speaker white  (overides 6 form above)
-.session:nth-of-type(2n+2),
-.session:nth-of-type(2n+2):before {
+.session:nth-of-type(2n+2):not(.session--workshop),
+.session:nth-of-type(2n+2):before:not(.session--workshop) {
   background-color: #fff;
   color: $beyond-blue;
 }
@@ -54,11 +54,11 @@
   color: #fff;
 }
 // 2,7,12
-.session:nth-of-type(5n-3) {
+.session:nth-of-type(5n-3):not(.session--workshop) {
   float: right;
 }
 // 3
-.session:nth-of-type(3n) {
+.session:nth-of-type(3n):not(.session--workshop) {
   float: right;
 }
 // 9
