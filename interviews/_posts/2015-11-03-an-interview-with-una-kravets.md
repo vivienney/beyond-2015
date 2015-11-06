@@ -2,9 +2,9 @@
 layout: audio-post
 title: An Interview With Una Kravats
 date: 2015-11-04 10:00:00
-blog_feature_image: interview-una-kravets-preview.jpg
-single_feature_image: interview-una-kravets-header.jpg
-og_image: interview-una-kravets-og.jpg
+blog_feature_image: interview-una-kravets-preview.png
+single_feature_image: interview-una-kravets-header.png
+og_image: interview-una-kravets-og.png
 audio_file_url: https://steer-podcast.s3.amazonaws.com/44.mp3
 ---
 Founder and CEO of Steer, Amelia Humfress, was joined by Una Kravats, Front-End Developer at IBM Design and one of the speakers at Beyond. They discuss how Una got started within the Sass community and how that lead to her speaking at conferences. Una shares her latest personal project CSSgram and how you can get started with your own personal projects.
