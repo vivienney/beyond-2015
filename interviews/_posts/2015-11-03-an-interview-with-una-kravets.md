@@ -1,5 +1,6 @@
 ---
 layout: audio-post
+post: true
 title: An Interview With Una Kravats
 date: 2015-11-04 10:00:00
 blog_feature_image: interview-una-kravets-preview.png

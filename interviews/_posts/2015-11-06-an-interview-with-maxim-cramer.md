@@ -1,5 +1,6 @@
 ---
 layout: audio-post
+post: true
 title: An Interview With Maxim Cramer
 date: 2015-11-06 10:00:00
 blog_feature_image: interview-maxim-cramer-preview.png
