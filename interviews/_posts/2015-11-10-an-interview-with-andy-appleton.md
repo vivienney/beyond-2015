@@ -1,5 +1,6 @@
 ---
 layout: audio-post
+post: true
 title: An Interview With Andy Appleton
 date: 2015-11-10 10:00:00
 blog_feature_image: interview-andy-appleton-preview.png
