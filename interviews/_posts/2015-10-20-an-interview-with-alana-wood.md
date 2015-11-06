@@ -1,5 +1,6 @@
 ---
 layout: audio-post
+post: true
 title: An Interview With Alana Wood
 date: 2015-10-20 10:00:00
 blog_feature_image: interview-alana-wood-preview.jpg
