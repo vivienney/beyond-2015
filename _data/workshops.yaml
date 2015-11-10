@@ -57,6 +57,20 @@
     <p>She will offer perspectives across creative, technology and business, with insights into where current jobs may lead. Learn how to stay relevant and position yourself for the future in this rapidly changing tech space, what skills are sought after and how to go about upskilling.</p>
 
 - workshop: true
+  name: Makers Academy
+  anchor: ma
+  twitter: makersacademy
+  github:
+  url: http://makersacademy.com/
+  image: workshop-ma.png
+  image_alt-home: workshop-ma.png
+  position:
+  title: An Introduction to Test Driven Development using Ruby and RSpec
+  description: >
+    <p>Everyone understands that TDD makes sense in theory, but getting started is hard, and learning how to do it well is borderline impossible. In this interactive workshop, Sam Joseph, Head of Education at Makers Academy, will coach you through your first Test-Driven programme using Ruby and RSpec - creating a solution to the FizzBuzz Kata.</p>
+    <p>About Sam Joseph<br>Aside from being Head of Education at Makers Academy - Europe's #1 Web Developer Bootcamp - Sam holds degrees in Astrophysics, Cognitive Science and Computer Science and speaks Japanese. He is also co-founder of the non-profit project incubator Agile Ventures, and he runs the Funniest Computer Ever (FCE) competition as part of his research on creating humorous chatbots.</p>
+
+- workshop: true
   soon: schedule__session--coming-soon
   name:
   anchor: tbc
