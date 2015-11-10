@@ -246,6 +246,12 @@
 .session:nth-of-type(2n+2).session--js {
   background-color: $beyond-blue;
 }
+
+.session:nth-of-type(2n+2).session--js:before {
+  background-color: $beyond-blue;
+}
+
+
 .session.session--coming-soon {
   background-color: $beyond-blue;
   float: left;
