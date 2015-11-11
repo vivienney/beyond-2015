@@ -162,6 +162,19 @@ speaker_order:
     </div>
   </a>
 
+  {% assign ma = site.data.workshops | where:"name", "Makers Academy" %}
+  {% assign ma = ma.first %}
+  <a href="/schedule#anchor-{{ma.anchor}}" class="session session--ma session--workshop">
+
+    <img class="session__image session__image--workshop" src="/img/{{ma.image_alt-home}}">
+    <div class="session__info session__info--workshop">
+      <h2 class="session__title session__title--workshop">{{ma.title}}</h2>
+      <h3 class="session__name session__name--workshop">{{ma.name}}</h3>
+    </div>
+  </a>
+
+  {% include workshop-coming-soon.html %}
+
   <a class="beyond-btn beyond-btn--primary" href="/schedule">See the schedule</a>
 
 </section>

@@ -1,5 +1,5 @@
 - start_time: "10:00"
-  Room A: ga
+  Room A: ma
   Room B: js
 
 - start_time: "11:00"
@@ -8,7 +8,7 @@
 
 - start_time: "14:00"
   Room A: github
-  Room B: tbc
+  Room B: ga
 
 - start_time: "15:00"
   Room A: github
