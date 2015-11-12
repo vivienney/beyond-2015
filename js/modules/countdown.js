@@ -56,7 +56,7 @@ class Countdown {
       },
       {
         name: 'Late',
-        date: 'November 23, 2015 10:00:00'
+        date: 'November 22, 2015 22:00:00'
       }];
     const totalTicketTiers = ticketTiers.length - 1;
 
