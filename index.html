@@ -140,7 +140,7 @@ speaker_order:
     </div>
   </a>
 
-  {% assign ga = site.data.workshops | where:"name", "General Assembly" %}
+  {% assign ga = site.data.workshops | where:"anchor", "ga" %}
   {% assign ga = ga.first %}
   <a href="/schedule#anchor-{{ga.anchor}}" class="session session--workshop">
 
@@ -151,7 +151,7 @@ speaker_order:
     </div>
   </a>
 
-  {% assign github = site.data.workshops | where:"name", "GitHub" %}
+  {% assign github = site.data.workshops | where:"anchor", "github" %}
   {% assign github = github.first %}
   <a href="/schedule#anchor-{{github.anchor}}" class="session session--github session--workshop">
 
@@ -162,7 +162,7 @@ speaker_order:
     </div>
   </a>
 
-  {% assign ma = site.data.workshops | where:"name", "Makers Academy" %}
+  {% assign ma = site.data.workshops | where:"anchor", "ma" %}
   {% assign ma = ma.first %}
   <a href="/schedule#anchor-{{ma.anchor}}" class="session session--ma session--workshop">
 
@@ -173,7 +173,18 @@ speaker_order:
     </div>
   </a>
 
-  {% include workshop-coming-soon.html %}
+  {% assign ga2 = site.data.workshops | where:"anchor", "ga2" %}
+  {% assign ga2 = ga2.first %}
+  <a href="/schedule#anchor-{{ga2.anchor}}" class="session session--ga2 session--workshop">
+
+    <img class="session__image session__image--workshop" src="/img/{{ga2.image_alt-home}}">
+    <div class="session__info session__info--workshop">
+      <h2 class="session__title session__title--workshop">{{ga2.title}}</h2>
+      <h3 class="session__name session__name--workshop">{{ga2.name}}</h3>
+    </div>
+  </a>
+
+
 
   <a class="beyond-btn beyond-btn--primary" href="/schedule">See the schedule</a>
 

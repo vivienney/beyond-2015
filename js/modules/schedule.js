@@ -16,7 +16,7 @@ class Schedule {
 
   checkHashAndTriggerModal(){
     var hash = window.location.hash;
-    if(hash === '#anchor-js' || hash === '#anchor-sketch' || hash === '#anchor-github' || hash === '#anchor-ga' || hash === '#anchor-ma'){
+    if(hash === '#anchor-js' || hash === '#anchor-sketch' || hash === '#anchor-github' || hash === '#anchor-ga' || hash === '#anchor-ma' || hash === '#anchor-ga2'){
       this.toggleSchedule('workshops');
     }
     if(hash !== '#workshops' && hash !== '#talks' && hash !== ''){
