@@ -67,16 +67,15 @@
   position:
   title: Hacks for Getting Hired
   description: >
-    <p>Making a career change? Trying to find your dream job? This class will give you insight into what hiring managers at startups look for and tips and tricks to stand out as an applicant and get the job.</p>
+    <p>Making a career change? Trying to find your dream job? This workshop will give you insights into what hiring managers at startups look for, and the tips and tricks needed to stand out as an applicant and get the job. You’ll learn:</p>
     <ul>
-      <li>How to find potential job opportunities and get in front of hiring managers</li>
-      <li>Crafting the cover letter</li>
-      <li>Nailing the interview</li>
-      <li>Follow up steps & getting the job</li>
+    <li>How to find potential job opportunities and get in front of hiring managers</li>
+    <li>Crafting the cover letter</li>
+    <li>Nailing the interview</li>
+    <li>Follow up steps & getting the job</li>
     </ul>
     <p class='schedule__session-sub-heading'>About Samantha Hepburn</p>
-    <p>Sam works with a variety of communities and user groups within London, helping organise and host events and presentations with a focus on developing talent and mentoring for everyone from students to CTOs. She wants less people to fall into the careers and rather actively choose what they want their future to look like based on sharing knowledge and understanding the different types of roles in the technical space.</p>
-    <p>Sam currently heads up Partnerships for General Assembly London where she continues to forge community partnerships and provide students with week over week career development programming and valuable professional opportunities.</p>
+    <p>Sam works with a variety of London-based communities and user groups, helping to organise events that focus on developing talent, and mentoring everyone from students to CTOs. She wants fewer people to fall into their careers, and more to play an active role in choosing what they want their future to look like, based on a better understanding of the different types of roles in the technical space.</p>
 
 - workshop: true
   name: Makers Academy
