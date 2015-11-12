@@ -14,3 +14,4 @@ Founder and CEO of Steer, Amelia Humfress, was joined by Maxim Cramer, Mobile Le
 - [Maxim Twitter](https://twitter.com/mennenia)
 - [WatchOS at NSSpain - Natasha Murashev](https://vimeo.com/141086010)
 - [NSLondon Meetup](http://nslondon.com/)
+- [My first podcast by Maxim Cramer](http://www.mennenia.com/articles/2015-11-10-firstpodcast/)
