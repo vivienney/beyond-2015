@@ -1,7 +1,13 @@
 - speaker: true
+  duration: 30
+  start_time: '9:00'
+  title: Registration Opens
+  soon: schedule__session--coming-soon
+
+- speaker: true
   name: Amelia Humfress
-  start_time: '9:15'
-  duration: 15
+  start_time: '9:30'
+  duration: 10
   anchor: amelia
   image: speaker-amelia-humfress.jpg
   position: Founder & CEO
@@ -15,7 +21,7 @@
 
 - speaker: true
   name: Alex Sexton
-  start_time: '9:30'
+  start_time: '9:40'
   duration: 30
   anchor: alex
   image: speaker-alex-sexton.jpg
@@ -33,7 +39,7 @@
 
 - speaker: true
   name: Maxim Cramer
-  start_time: '10:05'
+  start_time: '10:15'
   duration: 15
   anchor: maxim
   image: speaker-maxim-cramer.jpg
@@ -51,7 +57,7 @@
 
 - speaker: true
   name: Paul Lewis
-  start_time: '10:25'
+  start_time: '10:30'
   duration: 30
   anchor: paul
   image: speaker-paul-lewis.jpg
@@ -66,20 +72,27 @@
     <p>Phrases like “the DOM is slow” or “always use CSS animations!” make for great headlines, but the truth is often far more nuanced. </p>
     <p>In this session we'll look at how to think holistically about performance, and how to prioritize optimization work that your users will notice and appreciate.</p>
 
-- speaker: true
-  soon: schedule__session--coming-soon
-  title: Sponsor Message
-  start_time: '11:00'
-  duration: 15
-
 - speaker: false
   duration: 30
-  start_time: '11:20'
+  start_time: '11:00'
   title: Break
 
 - speaker: true
+  soon: schedule__session--workshop-group
+  title: Workshop Hour
+  start_time: '11:30'
+  duration: 60
+  anchor: workshop-first
+
+- speaker: false
+  duration: 60
+  start_time: '12:30'
+  title: Lunch
+  break: lunch
+
+- speaker: true
   name: Harry Roberts
-  start_time: '11:50'
+  start_time: '13:30'
   duration: 30
   anchor: harry
   image: speaker-harry-roberts.jpg
@@ -96,7 +109,7 @@
 
 - speaker: true
   name: Alana Wood
-  start_time: '12:25'
+  start_time: '14:00'
   duration: 15
   anchor: alana
   image: speaker-alana-wood.jpg
@@ -113,7 +126,7 @@
 
 - speaker: true
   name: Una Kravets
-  start_time: '12:45'
+  start_time: '14:20'
   duration: 30
   anchor: una
   image: speaker-una-kravets.jpg
@@ -129,21 +142,21 @@
     <p>In October 2014, I put my personal goals on GitHub (things I want to learn and do), set up a weekly review system, and even created some terminal aliases to make it even easier. I've since had several external contributions to this repo and it is one of my most popular. The system has grown over time.</p>
     <p>Living out loud has made me MUCH more productive and has allowed me to honestly reach these goals. This session will cover my experience and teach you how to set up your own personal goals system.</p>
 
-- speaker: true
-  soon: schedule__session--coming-soon
-  title: Sponsor Message
-  start_time: '13:20'
-  duration: 15
-
 - speaker: false
+  duration: 30
+  start_time: '14:50'
+  title: Break
+
+- speaker: true
+  soon: schedule__session--workshop-group
+  title: Workshop Hour
+  start_time: '15:20'
   duration: 60
-  start_time: '13:35'
-  title: Lunch
-  break: lunch
+  anchor: workshop-second
 
 - speaker: true
   name: Andy Appleton
-  start_time: '15:10'
+  start_time: '16:20'
   duration: 30
   anchor: andy
   image: speaker-andy-appleton.jpg
@@ -159,7 +172,7 @@
 
 - speaker: true
   name: Alice Bartlett
-  start_time: '15:45'
+  start_time: '16:50'
   duration: 30
   anchor: alice
   image: speaker-alice-bartlett.jpg
@@ -173,30 +186,9 @@
     <p>When I managed developers, I found myself fixing the same problems repeatedly.</p>
     <p>This talk will cover getting the most out of your role as a developer or person new to development including; how to negotiate a salary, how to spot and make the most of opportunities, and how to deal with conflict, and generally how to ask for more.</p>
 
-- speaker: false
-  duration: 30
-  start_time: '16:15'
-  title: Break
-
-- speaker: true
-  name: Coming soon
-  soon: schedule__session--coming-soon
-  start_time: '16:45'
-  duration: 30
-  anchor:
-  image:
-  position:
-  company:
-  url:
-  github:
-  twitter:
-  title: Coming Soon
-  description: >
-    <p>More information coming soon.</p>
-
 - speaker: true
   name: Linda Liukas
-  start_time: '17:40'
+  start_time: '17:30'
   duration: 30
   anchor: linda
   image: speaker-linda-liukas.jpg
@@ -209,17 +201,3 @@
   description: >
     <p>“You used to be much more...muchier. You’ve lost your muchness.”<p>
     <p>We all begin our careers in programming full of play. There's curiosity, joy and wonder of discovery. So how do we stay like Alice, choose always the red pill and fall deeper down into the machine?</p>
-
-- speaker: true
-  name: Amelia Humfress
-  start_time: '18:15'
-  duration: 15
-  anchor: amelia
-  image: speaker-amelia-humfress.jpg
-  position: Founder & CEO
-  company: Steer
-  url: https://steer.me
-  twitter: ameliahumfress
-  title: Closing Remarks
-  description: >
-      <p>A thank you from the team behind Beyond and details for the after-party.</p>

@@ -3,8 +3,9 @@ layout: default
 permalink: 'schedule/'
 title: Schedule
 room_list:
-  - Room A
-  - Room B
+  - Rehearsal Room A
+  - Rehearsal Room B
+  - Main Room
 ---
 
 <section class="schedule">
@@ -20,7 +21,7 @@ room_list:
       <a href="#workshops" class="schedule__link js-schedule-toggle" data-schedule-type="workshops">Workshops</a>
     </div>
 
-    <p class="schedule__info js-schedule__info js-schedule__info--workshops">There’ll be 2 workshops running concurrently throughout the day.</p>
+    <p class="schedule__info js-schedule__info js-schedule__info--workshops">There’ll be 2 workshop sessions - one in the morning and one in the afternoon, and you’ll be able to choose from 3 options for each session.</p>
   </div>
 
   <div class="schedule__column schedule__column--normal">
@@ -53,7 +54,7 @@ room_list:
       <tbody>
         {% for time_slot in site.data.workshops_schedule %}
 
-          <tr class="schedule__workshop-slot">
+          <tr class="schedule__workshop-slot" id="jump-anchor-workshop-{{time_slot.session}}">
             <td class="schedule__session-column schedule__session--workshop schedule__start-time">{{time_slot.start_time}}</td>
             <td>
               {% for room in page.room_list %}

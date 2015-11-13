@@ -13,10 +13,16 @@ class UiActions {
       event.preventDefault();
     });
 
-    $('.schedule__session, .js-schedule__details').not('.schedule__session--break, .schedule__session--coming-soon, .schedule__session--gap ').on('click', function(event) {
+    $('.schedule__session, .js-schedule__details').not('.schedule__session--break, .schedule__session--coming-soon, .schedule__session--gap, .schedule__session--workshop-group').on('click', function(event) {
       var slot = this;
       schedule.scheduleSPeakerInfo(slot);
       event.preventDefault();
+    });
+
+    $('.schedule__session--workshop-group').on('click', function(event) {
+      var session = this;
+      event.preventDefault();
+      schedule.scheduleSeeWorkshops(session);
     });
 
     $('.js-section-header-modal').on('click', function(){
@@ -31,7 +37,6 @@ class UiActions {
     });
 
     $('.session--speaker').on('click', function(){
-      console.log('yo')
       var mobile = Modernizr.mq('only screen and (max-width: 850px)');
 
       console.log(mobile);
@@ -57,7 +62,7 @@ class UiActions {
       var selected = $(this).data('filter');
       var el = this;
       blog.filterBy(selected, el);
-      return false
+      return false;
     });
 
     $(window).on('resize', function(){
