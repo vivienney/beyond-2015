@@ -86,7 +86,7 @@
   image: workshop-ma.png
   image_alt-home: workshop-ma.png
   position:
-  title: An Introduction to Test Driven Development using Ruby and RSpec
+  title: Test Driven Development using Ruby & RSpec
   description: >
     <p>Everyone understands that TDD makes sense in theory, but getting started is hard, and learning how to do it well is borderline impossible. In this interactive workshop, Sam Joseph, Head of Education at Makers Academy, will coach you through your first Test-Driven programme using Ruby and RSpec - creating a solution to the FizzBuzz Kata.</p>
     <p class='schedule__session-sub-heading'>About Sam Joseph</p>
