@@ -142,22 +142,6 @@
   break: lunch
 
 - speaker: true
-  name: Claudina Sarahe
-  start_time: '14:35'
-  duration: 30
-  anchor: claudina
-  image: speaker-coming-soon-top.png
-  position: Entrepreneur & Front-End Developer
-  company: Freelance
-  url: http://itsmisscs.me/
-  github: misscs
-  twitter: itsmisscs
-  title: It’s All About Systems
-  description: >
-    <p>More information coming soon.</p>
-
-
-- speaker: true
   name: Andy Appleton
   start_time: '15:10'
   duration: 30
