@@ -1,15 +1,9 @@
-- start_time: "10:00"
-  Room A: ma
-  Room B: js
+- start_time: "11:30"
+  Rehearsal Room A: sketch
+  Rehearsal Room B: ma
+  Main Room: ga2
 
-- start_time: "11:00"
-  Room A: sketch
-  Room B: js
-
-- start_time: "14:00"
-  Room A: github
-  Room B: ga
-
-- start_time: "15:00"
-  Room A: github
-  Room B: ga2
+- start_time: "15:20"
+  Rehearsal Room A: github
+  Rehearsal Room B: js
+  Main Room: ga
