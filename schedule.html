@@ -54,7 +54,7 @@ room_list:
       <tbody>
         {% for time_slot in site.data.workshops_schedule %}
 
-          <tr class="schedule__workshop-slot">
+          <tr class="schedule__workshop-slot" id="jump-anchor-workshop-{{time_slot.session}}">
             <td class="schedule__session-column schedule__session--workshop schedule__start-time">{{time_slot.start_time}}</td>
             <td>
               {% for room in page.room_list %}

@@ -22,7 +22,6 @@ class Schedule {
     if(hash !== '#workshops' && hash !== '#talks' && hash !== ''){
         this.scheduleSPeakerInfo(hash);
     }
-    console.log(hash);
   }
 
   checkHashAndTriggerCorrectSchedule(){
@@ -74,6 +73,14 @@ class Schedule {
     } else {
         $('.js-session-details').css('margin-top', pxFromTop).fadeIn();
     }
+  }
+
+  scheduleSeeWorkshops(session) {
+    this.toggleSchedule('workshops');
+    var sessionID = $(session).attr('id');
+    var pxFromTop = $('#jump-'+sessionID).offset().top;
+    $('html,body').scrollTop(pxFromTop);
+
   }
 }
 export default new Schedule();

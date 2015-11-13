@@ -78,10 +78,11 @@
   title: Break
 
 - speaker: true
-  soon: schedule__session--coming-soon
+  soon: schedule__session--workshop-group
   title: Workshop Hour
   start_time: '11:30'
   duration: 60
+  anchor: workshop-first
 
 - speaker: false
   duration: 60
@@ -147,10 +148,11 @@
   title: Break
 
 - speaker: true
-  soon: schedule__session--coming-soon
+  soon: schedule__session--workshop-group
   title: Workshop Hour
   start_time: '15:20'
   duration: 60
+  anchor: workshop-second
 
 - speaker: true
   name: Andy Appleton
