@@ -2,7 +2,7 @@
 layout: post
 post: true
 title: "Seb Lee-Delisle - Javascript, hardware and everything in between"
-date: 2015-11-12 13:30:00
+date: 2015-11-18 15:40:00
 blog_feature_image: interview-seb-lee-delisle-preview.jpg
 single_feature_image: interview-seb-lee-delisle-header.jpg
 og_image: interview-seb-lee-delisle-og.jpg
