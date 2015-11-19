@@ -17,10 +17,10 @@
   text-align: center;
 }
 
-.sponsors__partners {
+.sponsors__partners,
+.sponsors__headline {
   display: table;
   width: 100%;
-
 }
 .sponsor {
   text-align: center;
@@ -35,6 +35,10 @@
 
 .sponsor--large {
   @include span-columns(6, table);
+  @include media($mobile) {
+    display: block;
+    width: 100%;
+  }
 }
 .sponsor--single {
   width: auto;
@@ -45,6 +49,16 @@
   display: block;
   margin: 0 auto 0 auto;
   max-width: 60%;
+}
+.sponsor__link--moo {
+  max-width: 45%;
+}
+
+.sponsor__link--brewdog {
+  max-width: 43%;
+  @include media($mobile) {
+    max-width: 20%;
+  }
 }
 
 .sponsor__image {
