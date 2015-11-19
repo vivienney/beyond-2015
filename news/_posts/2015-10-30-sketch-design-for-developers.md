@@ -2,7 +2,7 @@
 layout: post
 post: true
 title: "Sketch: Design for Developers"
-date: 2015-10-30 13:30:00
+date: 2015-11-19 18:00:00
 blog_feature_image: sketch-preview.png
 single_feature_image: sketch-header.png
 og_image: sketch-og.png
