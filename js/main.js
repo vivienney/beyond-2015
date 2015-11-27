@@ -6,7 +6,6 @@ import svgeezy from 'svgeezy';
 import Modernizr from 'modernizr-mq';
 
 //modules
-import countdown from './modules/countdown';
 import uiActions from './modules/ui-actions';
 import schedule from './modules/schedule';
 import visitor from './modules/visitor-banner';
@@ -21,7 +20,6 @@ const APP = {
     //Module init
     visitor.init();
     uiActions.init();
-    countdown.init();
     schedule.init();
     audioPlayer.init();
   }
