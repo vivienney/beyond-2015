@@ -1,0 +1,45 @@
+.thanks {
+  @include outer-container;
+  @include outer-padding;
+  margin-bottom: 50px;
+  position: relative;
+  @include media($tablet) {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @include media($mobile) {
+    margin-bottom: 20px;
+  }
+}
+
+.thanks-illustration--large {
+  width: 100%;
+  @include media($mobile) {
+    display: none;
+  }
+}
+
+.thanks-illustration--mobile {
+  display: none;
+  @include media($mobile) {
+    width: 100%;
+    display: block;
+  }
+}
+
+.thanks__btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: 30px;
+  padding-right: 30px;
+  @include media($mobile) {
+    position: relative;
+    display: block;
+    bottom: 0;
+    left: 0;
+    transform: translateX(0);
+  }
+}
