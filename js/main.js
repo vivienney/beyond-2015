@@ -10,6 +10,7 @@ import uiActions from './modules/ui-actions';
 import schedule from './modules/schedule';
 import visitor from './modules/visitor-banner';
 import audioPlayer from './modules/audio-player';
+import videos from './modules/videos';
 
 const APP = {
   init: function() {
@@ -22,6 +23,9 @@ const APP = {
     uiActions.init();
     schedule.init();
     audioPlayer.init();
+    videos.init().then(() => {
+      videos.changeVid();
+    });
   }
 };
 

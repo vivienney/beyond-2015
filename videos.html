@@ -1,0 +1,27 @@
+---
+layout: default
+permalink: 'videos/'
+title: Talk Videos
+---
+<section class="single-page videos">
+  <div class="section-header">
+    <h2 class="section-header__title">Videos</h2>
+  </div>
+
+  <div class="video-player__wrapper">
+    <div id="video-placeholder"></div>
+  </div>
+
+  <div class="videos__all">
+    {% for video in site.data.videos %}
+      <div class="single-video" data-id="{{video.id}}">
+        <div class="single-video__image">
+          <img src="/img/{{ video.img }}" alt="{{ video.title }}">
+        </div>
+        <div class="single-video__info">
+          <h3>{{video.title}}</h3>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
